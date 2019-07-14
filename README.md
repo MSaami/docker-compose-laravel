@@ -14,7 +14,7 @@ As you know you must install Docker with Docker-compose, In order to install the
 
 ## Usage
 
-That's very easy, Just clone the project and pass 2 steps:
+That's very easy, Just clone the project and pass 3 steps:
 1. Go to root of the project.
 2. run `docker-compose up -d`.
 3. run `docker-compose exec app composer create-project --prefer-dist laravel/laravel .`
