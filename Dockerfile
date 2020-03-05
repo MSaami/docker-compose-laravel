@@ -24,6 +24,8 @@ RUN apt-get update && apt-get install -y \
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN pecl install redis && docker-php-ext-enable redis
+
 
 # Install extensions
 RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl mysqli soap
